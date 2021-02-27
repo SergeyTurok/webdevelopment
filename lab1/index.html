@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<button id="button" onclick="onClick()"> counter </button>
+	<h1 id="counter">0</h1>
+	<script type="text/javascript">
+      var count = 0;   
+		function onClick()
+	{
+	
+      let button = document.getElementById("button");
+      let counter = document.getElementById("counter");
+      if(button.onclick)
+      {
+        count++;
+       counter.innerHTML = count;
+      }
+	}
+
+	</script>
+	
+</body>
+</html>
